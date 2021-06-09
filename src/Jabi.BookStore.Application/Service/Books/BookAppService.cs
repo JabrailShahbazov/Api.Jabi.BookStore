@@ -110,14 +110,6 @@ namespace Jabi.BookStore.Service.Books
             );
         }
 
-        //public async Task UpdateAsync(int id, UpdateBookDto updateBookDto)
-        //{
-        //    var book = await Repository.GetAsync(b => b.Id == id);
-        //    book.Description = updateBookDto.Description;
-        //    book.PublishDate = updateBookDto.PublishDate;
-        //    await Repository.UpdateAsync(book);
-        //}
-
         private static string NormalizeSorting(string sorting)
         {
             if (sorting.IsNullOrEmpty())

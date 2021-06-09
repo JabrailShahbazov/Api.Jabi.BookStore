@@ -74,10 +74,10 @@ namespace Jabi.BookStore.Service.Authors
         {
             var author = await _authorRepository.GetAsync(id);
 
-            if (author.Name != input.Name)
+          /*  if (author.Name != input.Name)
             {
                 await _authorManager.ChangeNameAsync(author, input.Name);
-            }
+            }*/
 
             author.BirthDate = input.BirthDate;
             author.ShortBio = input.ShortBio;
